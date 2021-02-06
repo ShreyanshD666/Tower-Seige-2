@@ -9,6 +9,7 @@ var stand1,stand2;
 var polygon;
 var slingShot;
 var polygon_img;
+var score = 0;
 function preload(){
   polygon_img=loadImage("polygon.png");
 }
@@ -113,6 +114,8 @@ function draw() {
   fill("gold");
   imageMode(CENTER)
   image(polygon_img ,polygon.position.x,polygon.position.y,40,40);
+  
+  text("Score: "+score,750,40);
 
   slingShot.display();
   
