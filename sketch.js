@@ -113,8 +113,6 @@ function draw() {
   fill("gold");
   imageMode(CENTER)
   image(polygon_img ,polygon.position.x,polygon.position.y,40,40);
-  
-  text("Score: "+score,750,40);
 
   slingShot.display();
   
